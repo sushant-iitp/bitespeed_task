@@ -53,9 +53,7 @@ exports.app.post('/identify', async (req, res) => {
                 else {
                     primaryContactId = existingContact.linkedId;
                 }
-                if (email === '' || phoneNumber === '') {
-                }
-                else {
+                if (((email !== null) && (phoneNumber !== null)) && ((email != '') && (phoneNumber != ''))) {
                     await dbinit_1.pool.query('INSERT INTO contacts (phoneNumber, email, linkedId, linkPrecedence, createdAt, updatedAt) VALUES (?, ?, ?, "secondary", NOW(), NOW())', [phoneNumber, email, primaryContactId]);
                 }
             }
