@@ -1,21 +1,20 @@
 import mysql from 'mysql2/promise';
 
 export const pool = mysql.createPool({
-  host: process.env.DB_HOST || 'localhost',
+  host: process.env.DB_HOST,
   port: 3306,
-  user: process.env.DB_USER || 'sushant',
-  password: process.env.DB_PASSWORD || '1234567890',
-  database: process.env.DB_DATABASE || 'User_info',
-
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_DATABASE,
 });
 
 export async function createDatabaseAndTable(): Promise<void> {
   try {
     // Create the database
-    await pool.query('CREATE DATABASE IF NOT EXISTS User_info');
+    await pool.query('CREATE DATABASE IF NOT EXISTS sql12628246');
 
     // Select the database to use
-    await pool.query('USE User_info');
+    await pool.query('USE sql12628246');
 
     // Create the contacts table
     const sql = `
