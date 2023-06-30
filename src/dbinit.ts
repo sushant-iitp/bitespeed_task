@@ -11,10 +11,10 @@ export const pool = mysql.createPool({
 export async function createDatabaseAndTable(): Promise<void> {
   try {
     // Create the database
-    await pool.query('CREATE DATABASE IF NOT EXISTS sql12628246');
+    await pool.query('CREATE DATABASE IF NOT EXISTS bokqy9ixaaruya8lg1yi');
 
     // Select the database to use
-    await pool.query('USE sql12628246');
+    await pool.query('USE bokqy9ixaaruya8lg1yi');
 
     // Create the contacts table
     const sql = `

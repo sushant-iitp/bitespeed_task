@@ -4,7 +4,7 @@ Welcome to our project! This is an Identity Reconciliation Service built using T
 
 ## Overview
 
-Our service collects contact details such as email and phone number, and it links different contact information to the same person if any of the provided information is found to be repeated. If the provided values are unique, the service creates new contacts.
+Our service collects contact details such as email and phone number, and it links different contact information to the same person if any of the provided information is found to be repeated. If any of the provided values are unique, the service creates new contacts.
 
 ## Accessing the Service
 

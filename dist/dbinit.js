@@ -15,9 +15,9 @@ exports.pool = promise_1.default.createPool({
 async function createDatabaseAndTable() {
     try {
         // Create the database
-        await exports.pool.query('CREATE DATABASE IF NOT EXISTS sql12628246');
+        await exports.pool.query('CREATE DATABASE IF NOT EXISTS bokqy9ixaaruya8lg1yi');
         // Select the database to use
-        await exports.pool.query('USE sql12628246');
+        await exports.pool.query('USE bokqy9ixaaruya8lg1yi');
         // Create the contacts table
         const sql = `
       CREATE TABLE IF NOT EXISTS contacts (
